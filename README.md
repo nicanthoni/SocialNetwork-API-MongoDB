@@ -1,7 +1,7 @@
 # SocialNetwork-API-MongoDB
 
 ## Motivation
-* This project exists to....
+* This project exists to create an API for a social network that uses a NoSQL database,so that a website can handle large amounts of unstructured data.
 
 ## Demo
 Demo Video: 
