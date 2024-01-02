@@ -49,4 +49,12 @@ module.exports = {
       res.status(500).json(err);
     }
   },
+// [POST] to add a new friend to a user's friend list
+ async addFriend(req,res) {
+
+ },
+// [DELETE] to remove a friend from a user's friend list
+
+
+
 };
