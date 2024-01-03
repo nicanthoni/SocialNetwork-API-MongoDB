@@ -7,10 +7,10 @@
 Demo Video: 
 
 ## Tech/framework used
-* Javascript, Express.js, MongoDB/Mongoose
+* Javascript, Express.js, MongoDB/Mongoose.
 
 ## Usage
-* In your IDE's integrated terminal....
+* In your IDE's integrated terminal, run nodemon server command. Then, utilize port 3001 within insomnia to test the routes showcased in the api & controller folders.
 
 ## Ask Questions
 [Github Profile](https://github.com/nicanthoni)
