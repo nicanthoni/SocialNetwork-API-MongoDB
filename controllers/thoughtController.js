@@ -25,7 +25,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // create a new thought
+  // create a new thought and add to associated users thought array
   async createThought(req, res) {
     try {
       const thought = await Thought.create(req.body);
@@ -68,7 +68,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // [POST] to add a new reaction to a thought 
+  // Add a new reaction to a thought 
   async addReaction(req, res) {
     try {
       const thought = await Thought.findOneAndUpdate(
@@ -86,7 +86,7 @@ module.exports = {
       res.status(500).json(err);
     }
   },
-  // [DELETE] to remove a reaction from a thought
+  // Remove a reaction from a thought
   async removeReaction(req, res) {
     try {
       const thought = await Thought.findOneAndUpdate(
