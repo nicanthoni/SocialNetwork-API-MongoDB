@@ -13,7 +13,7 @@ const thoughtSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            get: formattedDate
+            get: timestamp => timestamp.toISOString().split('T')[0]
         },
         username: {
             type: String,
@@ -36,9 +36,6 @@ thoughtSchema.virtual('reactionCount')
     .get(function () {
         return this.reactions.length;
     });
-
-// getter method to format the timestamp on query
-function formattedDate(createdAt) {}
 
 // Initialize Thought model
 const Thought = model('thought', thoughtSchema);

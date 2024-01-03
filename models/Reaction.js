@@ -19,7 +19,7 @@ const reactionSchema = new Schema(
         createdAt: {
             type: Date,
             default: Date.now,
-            get: formattedDate
+            get: timestamp => timestamp.toISOString().split('T')[0]
         },
     },
     {
@@ -30,7 +30,5 @@ const reactionSchema = new Schema(
     }
 );
 
-// getter method to format the timestamp on query
-function formattedDate(createdAt) {}
 
 module.exports = reactionSchema;
