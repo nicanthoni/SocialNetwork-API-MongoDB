@@ -21,11 +21,11 @@ router.route('/:userId').put(updateUser);
 // /api/users/:userId
 router.route('/:userId').delete(deleteUser);
 
-// /api/users/:userId/friends/:friendId
-// [POST] to add a new friend to a user's friend list
+
+// /api/users/:userId/friends/:friendId -> add friend
 router.route('/:userId/friends/:friendId').post(addFriend);
 
-// [DELETE] to remove a friend from a user's friend list
+// /api/users/:userId/friends/:friendId -> remove friend
 router.route('/:userId/friends/:friendId').delete(removeFriend);
 
 module.exports = router;
