@@ -25,7 +25,7 @@ module.exports = {
             res.status(500).json(err);
         }
     },
-    // create a new thought and add to associated users thought array
+    // create a new thought & push the created thought's _id to the associated user's thoughts array field)
     async createThought(req, res) {
         try {
             const thought = await Thought.create(req.body);
